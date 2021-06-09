@@ -1,5 +1,9 @@
+import Monitoring from './Monitoring';
+
 export default function App(){
     return(
-        <div>Hello world</div>
+        <div className='monitoring_div'>
+            <Monitoring/>
+        </div>
     )
 }

@@ -1,0 +1,19 @@
+.group_list {
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    padding: 0;
+}
+.group_list_cell {
+    border-bottom: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    background-color: #fff;
+    padding: 12px;
+    color: rgb(143, 143, 143);
+}
+.group_list_cell_number {
+    font-weight: 300;
+    font-size: 36px;
+    color: #3d3d3d;
+    line-height: 40px;
+    font-style: normal;
+}
