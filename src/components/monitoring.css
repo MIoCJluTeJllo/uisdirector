@@ -1,15 +1,6 @@
 .monitoring_body {
-    padding: 28px 20px 20px;
     overflow: unset;
     flex: 1;
-    background-color: #F5F5F5
-}
-.monitoring_title {
-    font-size: 36px;
-    font-style: normal;
-    line-height: 40px;
-    color: #3d3d3d;
-    padding: 8px 12px;
 }
 .group_list_title {
     font-style: normal;

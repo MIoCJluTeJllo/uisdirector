@@ -1,11 +1,11 @@
 import './style.css';
 
-export default function GroupListCell({text, value, color}){
+export default function GroupListCell({text, child}){
     return (
         <div className='group_list_cell'>
             {text}
-            <div style={{color}} className='group_list_cell_number'>
-                {value}
+            <div>
+                {child}
             </div>
         </div>
     )

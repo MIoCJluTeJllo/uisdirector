@@ -1,10 +1,10 @@
 import GroupListCell from './GroupListCell'
 
-export default function GroupList({ structure=[], data={} }){
+export default function GroupList({ structure=[], data={}, style }){
     return (
-        <div className='group_list'>
+        <div className='group_list' style={style}>
             {structure.map(({key, text, color}) => 
-                <GroupListCell key={key} text={text} color={color} value={data[key]}/>)
+                <GroupListCell key={key} color={color} value={data[key]}/>)
             }
         </div>
     )

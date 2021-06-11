@@ -1,22 +1,17 @@
 .monitoring_table {
-    display: flex;
     flex-direction: column;
     background-color: #fff;
     margin: 14px 0 0;
 }
-.table_header, .table_row {
-    display: flex;
-    height: 80px;
-    width: 645px;
-}
-.table_row {
-    height: 40px;
+.table_row, .table_header {
+    display: grid;
 }
 .table_header_cell, .table_row_cell {
-    height: 80px;
     left: 0px;
     top: 0px;
-    width: 210px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+.table_header_cell {
+    flex-direction: column;
 }

@@ -1,6 +1,5 @@
 .group_list {
     display: grid;
-    grid-template-columns: repeat(4,25%);
     padding: 0;
 }
 .group_list_cell {
