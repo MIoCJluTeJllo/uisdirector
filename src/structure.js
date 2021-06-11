@@ -53,16 +53,16 @@ export const WORKLOAD_TABLE = [
         { key: "in_call_count", text: "Вход" },
         { key: "out_call_count", text: "Исход" },]  },
     { key: "in_talk_count", text: "Общее время в разговоре", sub_headers: [
-        { key: "1", text: "Всего" },
-        { key: "2", text: "Вход" },
-        { key: "3", text: "Исход" },]  },
+        { key: "sum_talk_duration", text: "Всего" },
+        { key: "in_sum_talk_duration", text: "Вход" },
+        { key: "out_sum_talk_duration", text: "Исход" },]  },
     { key: "in_talk_count", text: "Общее время дозвона", sub_headers: [
-        { key: "1", text: "Всего" },
-        { key: "2", text: "Вход" },
-        { key: "3", text: "Исход" },]  },
+        { key: "sum_answer_duration", text: "Всего" },
+        { key: "in_sum_answer_duration", text: "Вход" },
+        { key: "out_sum_answer_duration", text: "Исход" },]  },
     { key: "in_talk_count", text: "Ср. время между вызовами", sub_headers: [
-        { key: "2", text: "Вход" },
-        { key: "3", text: "Исход" },] },
+        { key: "in_avg_between_call_duration", text: "Вход" },
+        { key: "out_avg_between_call_duration", text: "Исход" },] },
 ]
 
 export const WORKLOAD_AVERAGE_TIME = [

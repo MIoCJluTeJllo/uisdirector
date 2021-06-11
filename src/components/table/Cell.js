@@ -1,8 +1,7 @@
-export default function Cell({text}){
+export default function Cell({text, prepare=(text)=>text}){
     return(
         <div className='table_row_cell'>
-            {console.log(text)}
-            {text}
+            {prepare(text)}
         </div>
     )
 }
