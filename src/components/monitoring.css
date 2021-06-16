@@ -1,5 +1,4 @@
-.monitoring_body {
-    overflow: unset;
+.monitoring {
     flex: 1;
 }
 .group_list_title {

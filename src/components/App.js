@@ -1,17 +1,18 @@
 import Menu from './Menu';
 import Monitoring from './Monitoring';
 import Workload from './Workload';
-import {Switch, Route} from 'react-router-dom';
+import {Switch, Route, withRouter} from 'react-router-dom';
 
 import './App.css';
 
 export default function App(){
+    const MenuWithRouter = withRouter(Menu);
     return(
         <div className='app'>
-            <Menu/>
+            <MenuWithRouter/>
             <div className='pages'>
                 <Switch>
-                    <Route exact path='/monitoring' component={Monitoring} />
+                    <Route exact path='/' component={Monitoring} />
                     <Route exact path='/workload' component={Workload} />
                 </Switch>
             </div>

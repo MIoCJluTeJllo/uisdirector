@@ -3,15 +3,37 @@
     background-color: #fff;
     margin: 14px 0 0;
 }
-.table_row, .table_header {
+.table_row {
     display: grid;
 }
-.table_header_cell, .table_row_cell {
-    left: 0px;
-    top: 0px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    border-right: 1px solid rgba(0, 0, 0, 0.08);
+.table_header {
+    display: grid;
+}
+.table_header_cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.table_header_cell_text {
+    margin: 2px;
+    text-align: center;
+}
+.table_row_cell {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 .table_header_cell {
     flex-direction: column;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+.table_row_cell {
+    text-align: center;
+    font-size: 18px;
+}
+.table_header_cell {
+    font-weight: 500;
+    font-size: 20px;
 }

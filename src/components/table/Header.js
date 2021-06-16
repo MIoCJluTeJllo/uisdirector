@@ -4,12 +4,9 @@ import HeaderCell from './HeaderCell';
 
 export default function Header({titles=[]}){
     return(
-        <div className='table_header' style={{gridTemplateColumns: `repeat(${titles.length},${100/titles.length}%)`}}>
+        <div className='table_header' style={{gridTemplateColumns: `repeat(${titles.length},1fr`}}>
             {titles.map(({key, text, sub_headers}) =>
-                <>
-                    <HeaderCell key={key} text={text}/>
-                    <div>{sub_headers && <Header titles={sub_headers}/>}</div>
-                </>
+                <HeaderCell sub_headers={sub_headers} key={key} text={text}/>
             )}
         </div>
     )

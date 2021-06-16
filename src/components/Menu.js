@@ -1,14 +1,13 @@
 import {Nav} from 'react-bootstrap';
-import {Link} from 'react-router-dom';
 
-export default function Menu(){
+export default function Menu({location}){
     return (
-        <Nav variant="pills" defaultActiveKey="1">
+        <Nav activeKey={location.pathname} variant="pills">
             <Nav.Item>
-                <Nav.Link eventKey="1" as={Link} to="/monitoring">Онлайн-мониторинг</Nav.Link>
+                <Nav.Link href="/">Онлайн-мониторинг</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey="2" as={Link} to="/workload">Загруженность сотрудников</Nav.Link>
+                <Nav.Link href="/workload">Загруженность сотрудников</Nav.Link>
             </Nav.Item>
         </Nav>
     );

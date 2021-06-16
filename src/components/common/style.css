@@ -1,0 +1,10 @@
+.date_picker {
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.date_picker_button {
+    text-align: center;
+    background-color: white;
+}
